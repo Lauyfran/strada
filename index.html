@@ -3,126 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Strada</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/logoMesa_de_trabajo_6.png" alt="Ícono de la Tienda">
-    
-        </div> 
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li>
-                    <a href="#">Shop ▼</a>
-                    <ul class="submenu">
-                        <li><a href="./pages/buzos.html">Buzos</a></li>
-                        <li><a href="./pages/zapatillas.html">Zapatillas</a></li>
-                        <li><a href="./pages/joggins.html">Joggins</a></li>
-                      </ul>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="./img/logoMesa_de_trabajo_6.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Strada
+                </a>
+              </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/ofertas.html">ofertas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main >
-        <section class="banner">
-            <img src="./img/Strada.jpg" alt="Banner de Ropa">
-        </section>
-        <section class="titulo">
-            <h2>ofertas</h2>
-        </section>
-        <section  class="container-items">
-            <div class="item">
-                <figure>
-                    <img src="./img/buzo1.jpg" alt="buzo">
-                </figure>
-                <div class="info-produc">
-                    <h2>Buzo oversize</h2>
-                    <p class="price"><span>$80</span> $40</p>
-                    <button>Añadir al carrito</button>
-                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    categorias
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/buzos.html">Buzos</a></li>
+                    <li><a class="dropdown-item" href="./pages/joggins.html"> Joggins </a></li>
+                    <li><a class="dropdown-item" href="./pages/zapatillas.html">Zapattilas</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search" >
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+              </form>
             </div>
-            <div class="item">
-                <figure>
-                    <img src="./img/buzo1.jpg" alt="buzo">
-                </figure>
-                <div class="info-produc">
-                    <h2>Buzo oversize</h2>
-                    <p class="price"><span>$80</span> $40</p>
-                    <button>Añadir al carrito</button>
-                </div>
+          </div>
+        </nav> 
+      </header>
+      <main >
+        <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/Strada.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="item">
-                <figure>
-                    <img src="./img/buzo1.jpg" alt="buzo">
-                </figure>
-                <div class="info-produc">
-                    <h2>Buzo oversize</h2>
-                    <p class="price"><span>$80</span> $40</p>
-                    <button>Añadir al carrito</button>
+            <div class="carousel-item">
+              <img src="./img/Strada.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Strada.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </section>
+  
+         <section class="container">
+          <h2 class="text-center"> Productos destacados</h2>
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+              <img src="./img/buzo1.jpg" class="card-img-top" class="img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Buzo Oversize</h5>
+                <p class="card-text">$80</p>
+                <a href="#" class="btn btn-primary">agregar al carrito</a>
+              </div>
+            </div> 
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./img/za1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapattilas</h5>
+                  <p class="card-text">$70</p>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./img/jo1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Joggins</h5>
+                  <p class="card-text">$80</p>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h2 class="text-center">Ofertas</h2>
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+              <img src="./img/buzo1.jpg" class="card-img-top" class="img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Buzo Oversize</h5>
+                <p class="card-text text-decoration-line-through text-muted">$80</p><p>$40</p>
+                <a href="#" class="btn btn-primary">agregar al carrito</a>
+              </div>
+            </div> 
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./img/za1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapattilas</h5>
+                  <p class="card-text text-decoration-line-through text-muted">$70</p><p>$40</p>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./img/jo1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Joggins</h5>
+                  <p class="card-text text-decoration-line-through text-muted">$80</p><p>$60</p>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="container">
+          <h2 class="text-center">categorias</h2>
+          <section  class="container-items">
+            <div class="categoriaboton">
+                <figure>
+                   <a href="./pages/buzos.html"><img src="./img/buzo1.jpg" alt="buzo"></a>
+                </figure>
+            </div>
+            <div class="categoriaboton">
+                <figure>
+                    <a href="./pages/joggins.html"><img src="./img/jo1.jpg" alt="Joggins"></a>
+                </figure>
+            </div>
+            <div class="categoriaboton">
+                <figure><a href="./pages/zapatillas.html">
+                    <img src="./img/za1.jpg" alt="zapatillas"></a>
+                </figure>
             </div>
         </section>
-            <section class="titulo">
-                <h2>Categorias</h2>
-            </section>
-            <section  class="container-items">
-                <div class="item">
-                    <figure>
-                       <a href="./pages/buzos.html"><img src="./img/buzo1.jpg" alt="buzo"></a>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <a href="./pages/joggins.html"><img src="./img/jo1.jpg" alt="Joggins"></a>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure><a href="./pages/zapatillas.html">
-                        <img src="./img/za1.jpg" alt="zapatillas"></a>
-                    </figure>
-                </div>
-            </section>
-            <section class="titulo">
-                <h2>Productos destacados</h2>
-            </section>
-            <section  class="container-items">
-                <div class="item">
-                    <figure>
-                        <img src="./img/buzo1.jpg" alt="buzo">
-                    </figure>
-                    <div class="info-produc">
-                        <h2>Buzo oversize</h2>
-                        <p class="price">$80</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="./img/buzo1.jpg" alt="buzo">
-                    </figure>
-                    <div class="info-produc">
-                        <h2>Buzo oversize</h2>
-                        <p class="price">$80</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="./img/buzo1.jpg" alt="buzo">
-                    </figure>
-                    <div class="info-produc">
-                        <h2>Buzo oversize</h2>
-                        <p class="price">$80</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
-            </section>        
-    </main>
+      </main>
         <footer>
             <div class="footer-left">
               <ul>
@@ -132,8 +184,8 @@
               </ul>
             </div>
             <div class="footer-center">
-              <h2>Información de Contacto</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h2>Strada</h2>
+              <p>Indumentaria</p>
             </div>
             <div class="footer-right">
               <a href="#"><img src="icono1.png" alt="Icono 1"></a>
@@ -141,5 +193,6 @@
               <a href="#"><img src="icono3.png" alt="Icono 3"></a>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>       
 </body>
 </html>
