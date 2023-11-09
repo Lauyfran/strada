@@ -1,0 +1,50 @@
+footer {
+  background-color: $color-texto;
+  color: $color-texto-blanco;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+    /* Estilos para el menú a la izquierda */
+    .footer-left {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          display: inline;
+          margin-right: 5px;
+  
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  
+    /* Estilo para el centro */
+    .footer-center {
+      h2 {
+        margin: 0;
+      }
+    }
+  
+    /* Estilo para los iconos a la derecha */
+    .footer-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    img{
+      width: 24px;
+      height: 24px;}
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+      }
+    }
+  }
+  

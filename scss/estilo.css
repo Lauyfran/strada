@@ -1,0 +1,178 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header (Encabezado)*/
+body {
+  max-width: 1800px;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-items {
+  margin-right: 1px;
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Main*/
+.item {
+  border-radius: 10px;
+}
+.item:hover {
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.item img figure {
+  overflow: hidden;
+}
+
+.info-produc {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-produc .price {
+  font-size: 18px;
+  font-weight: 900px;
+}
+.info-produc button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.categoriaboton {
+  border-radius: 10px;
+}
+.categoriaboton img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.categoriaboton img figure {
+  overflow: hidden;
+}
+.categoriaboton img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Estilos para el menú a la izquierda */
+  /* Estilo para el centro */
+  /* Estilo para los iconos a la derecha */
+}
+footer .footer-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-left ul li {
+  display: inline;
+  margin-right: 5px;
+}
+footer .footer-left ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-center h2 {
+  margin: 0;
+}
+footer .footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .footer-right img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer-right a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.contactoC {
+  flex: 1;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.contacto label, .contacto input, .contacto textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+.contacto button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .container-items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .item {
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=estilo.css.map */

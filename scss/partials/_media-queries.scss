@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: $font-size-pequeno; 
+    }
+    .container-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr); 
+      }
+    
+      .item {
+        margin: 5px;
+      }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header {
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 993px) {
+  
+}

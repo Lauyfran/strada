@@ -1,0 +1,23 @@
+.contactoC{
+   flex: 1;
+}
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  
+    label, input, textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+  }
